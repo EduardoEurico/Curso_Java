@@ -1,0 +1,30 @@
+package aplicacao;
+import java.util.Scanner;
+public class Ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int A,B,C,D;
+		
+		System.out.printf("Insira o valor de A: ");
+		A=sc.nextInt();
+		
+		System.out.printf("Insira o valor de B: ");
+		B=sc.nextInt();
+		
+		System.out.printf("Insira o valor de C: ");
+		C=sc.nextInt();
+		
+		System.out.printf("Insira o valor de D: ");
+		D=sc.nextInt();
+		
+		int dif=(A*B)-(C*D);
+		
+		System.out.printf("\nA diferença do produto de C e D segundo a fórmula é: %d",dif);
+		
+		
+		sc.close();
+	}
+
+}

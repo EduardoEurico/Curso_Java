@@ -1,0 +1,10 @@
+package aplicacao;
+
+public class Programa{
+	public static void main(String[]args) {
+		
+		/* Primeiro Código*/
+		System.out.println("OLÁ MUNDOOOO, estou iniciando no Java.");
+	}
+	
+}

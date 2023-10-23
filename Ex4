@@ -1,0 +1,35 @@
+package aplicacao;
+import java.util.Scanner;
+public class Projetos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		double A,B,C;
+		
+		System.out.println("Escolha um valor para A: ");
+		A=sc.nextDouble();
+		
+		System.out.println("Escolha o valor de B: ");
+		B=sc.nextDouble();
+		
+		System.out.println("Escolha o valo de C: ");
+		C=sc.nextDouble();
+		
+		double Tri_R=(A*C)/2;
+		double raio=3.14159*(C*C) ;
+		double trapezio= ((A+B)*C)/2;
+		double A_quadrado=B*B;
+		double A_ret=A*B;
+		
+		System.out.printf("\nA área do triângulo retângulo que tem A por base e C por altura é: %2f",Tri_R);
+		
+		System.out.printf("\nA área do círculo de raio C é: %2f",raio);
+		
+		System.out.printf("\nA área do trapézio que tem A e B por bases e C por altura é: %2f",trapezio);
+		System.out.printf("\na área do quadrado que tem lado B é: %2f",A_quadrado);
+		System.out.printf("\nA área do retangulo que tem lado A e B é: %2f",A_ret);
+		sc.close();
+	}
+
+}

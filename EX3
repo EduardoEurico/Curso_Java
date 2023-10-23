@@ -1,0 +1,34 @@
+package aplicacao;
+import java.util.Scanner;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		Scanner sc= new Scanner(System.in);
+		int num;
+		float horas;
+		float valor;
+		
+		System.out.println("Digite um número: ");
+		num=sc.nextInt();
+		System.out.printf("\nO número do funcionario é: %2d",num);
+		
+		System.out.printf("\nDigite o numero de horas");
+		horas=sc.nextInt();
+		System.out.printf("\nO numero de horas: %2f",horas);
+		
+		System.out.println("\nDigite o valor por hora: ");
+		valor=sc.nextInt();
+		System.out.printf("\nO valor por hora: %2f",valor);
+		
+		float res=valor*horas;
+		
+		System.out.printf("\nO valor por hora é: %2f",res);
+		
+		sc.close();
+	}
+
+}

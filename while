@@ -1,0 +1,18 @@
+package aplicacao;
+
+public class Project {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			int valor1=50;
+			int valor2=2;
+			int i=0;
+			int res = valor1+valor2;
+			
+			while (i!= 5){
+				System.out.println(res);
+				i++;
+			}
+	}
+
+}

@@ -1,0 +1,56 @@
+package main;
+import java.util.Scanner;
+public class Exercicios {
+
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+
+		 int tamanho = 10;
+
+		
+
+		System.out.printf("Qual o 1º valor: ");
+
+		double v1=sc.nextDouble();
+
+		
+
+		System.out.printf("Qual o 2º valor: ");
+
+		double v2=sc.nextDouble();
+
+	
+
+		if (v1==0 && v2==0) {
+
+			System.out.printf("Origem\n");
+
+		}else if (v1>0 && v2>0) {
+
+			System.out.printf("Q1\n");
+
+		}else if (v1<0 && v2<0) {
+
+			System.out.printf("Q3\n");
+
+		}else if (v1>0 && v2<0) {
+
+			System.out.printf("Q2\n");
+
+		}else if (v1<0 && v2>0) {
+
+			System.out.printf("Q4\n");
+
+		}
+
+		sc.close();
+
+		 
+	        }
+
+	    }

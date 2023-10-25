@@ -1,0 +1,81 @@
+package Exercicio;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		Scanner sc=new Scanner(System.in);
+
+		
+
+		System.out.printf("==========================================     MENU     =================================================");
+
+		System.out.printf("\n>>>>>>>>>>>>>>>>>>>>> Digite 'A' ou 'a' para fazer a media aritimetica <<<<<<<<<<<<<<<<<<<<<<<\n");
+
+		System.out.printf("\n>>>>>>>>>>>>>>>>>>>>> Digite 'F' ou 'f' para fazer a media ponderada   <<<<<<<<<<<<<<<<<<<<<<<\n");
+
+		
+
+		System.out.printf("\nDigite aqui: ");
+
+		String met=sc.nextLine();
+
+		
+
+		System.out.printf("1º nota: ");
+
+		double n1=sc.nextDouble();
+
+		System.out.printf("2º nota: ");
+
+		double n3=sc.nextDouble();
+
+		System.out.printf("3º nota: ");
+
+		double n2=sc.nextDouble();
+
+		
+
+		double ari=aritimetica(n1,n2,n3);
+
+		
+
+		double pond=ponderada(n1,n2,n3);
+
+		
+
+		if (met.equals("A")|| met.equals("a")) {
+
+		System.out.printf("A media aritimetica das notas %.2f , %.2f e %.2f é %.2f",n1, n2, n3, ari);
+
+		}else if(met.equals("F")|| met.equals("f")) {
+
+		System.out.printf("A media ponderada das notas %.2f , %.2f e %.2f é %.2f",n1, n2, n3, pond);
+
+	}
+
+		sc.close();
+
+		
+
+	}
+
+	public static double aritimetica(double n1, double n2, double n3) {
+
+		return (n1+n2+n3)/3;
+
+}
+
+	public static double ponderada(double n1, double n2, double n3) {
+
+		return (2*n1+3*n2+5*n3)/3;
+
+}
+
+}

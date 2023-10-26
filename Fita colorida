@@ -1,1 +1,48 @@
+package Exercicios;
+import java.util.Scanner;
+public class Fita {
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+
+		System.out.println("Escolha o numero de quadrados: ");
+
+		int num=sc.nextInt();
+
+		int[] vetor= new int[num];
+
+		int cont=0;		
+
+		for(int i=0;i<vetor.length;i++) {
+			System.out.println("Escolha os valores das cores()0->colorido,-1->não colorido: ");
+			int cor=sc.nextInt();
+			int dist=distancia(vetor,);
+				if (cor ==-1){
+					cont++;
+				
+				}else if (cor == 0){
+					cont=0;
+
+				}
+
+				vetor[i]=cont;
+
+
+			}
+
+		System.out.printf("valor do vetor: ");
+
+		for (int valor:vetor)
+
+			System.out.print(valor+ " ");
+
+		sc.close();
+		
+		public static int distancia(int[] vetor,) {
+			
+		}
+		
+	}
+
+}
